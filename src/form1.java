@@ -24,7 +24,7 @@ public class form1 extends JFrame {
         ok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String url = "jdbc:mysql://localhost:3306/clasepoo";
+                String url = "jdbc:mysql://localhost:3306/clase";
                 String usuario = "root";
                 String password = "123456";
                 Estudiantes est = new Estudiantes();
