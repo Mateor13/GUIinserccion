@@ -12,6 +12,7 @@ public class form1 extends JFrame {
     private JTextField b1;
     private JTextField b2;
     private JLabel Resultado;
+    private JButton cerrar;
 
     public form1() {
         setTitle("Inserción de Datos");
@@ -46,6 +47,12 @@ public class form1 extends JFrame {
                         e1.printStackTrace();
                         Resultado.setText("Error al insertar los datos");
                 }
+            }
+        });
+        cerrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
             }
         });
     }
